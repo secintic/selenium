@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import time
 
 browser = webdriver.Chrome()
-browser.get('https://www.bseindia.com/corporates/List_Scrips.aspx?expandable=1')
+browser.get('url')
 browser.find_element_by_xpath("//select[@name='ctl00$ContentPlaceHolder1$ddSegment']/option[text()='Equity']").click()
 browser.find_element_by_xpath("//select[@name='ctl00$ContentPlaceHolder1$ddlStatus']/option[text()='Active']").click()
 browser.find_element_by_name("ctl00$ContentPlaceHolder1$btnSubmit").click()
